@@ -1,0 +1,27 @@
+#articleImage {
+	margin-top: 1em;
+}
+
+.thumbs {
+    width: 90%;
+    height: 15%;
+    margin:0 auto;
+    margin-top: 5%;
+}
+
+.thumb {
+    display: inline-block;
+    width: 18%;
+    height: 100%;
+    font-size: 0.5em;
+    margin-left:2%;
+    margin-right:2%;
+}
+.thumb img{
+    width: 100%;
+    height: 40%;
+	border: 2px solid gray;
+}
+.thumb span{
+    font-size:1.3em;
+}

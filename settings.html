@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ANDROID</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+
+			<span id=mainTitle>Exam Room <span class="titleRed">Health<b>BOARD</b></span></span>
+
+			<div class="heatherBox">
+				Dr. Lev Haimoff, MADISON MEDICAL PRACTICE
+			</div>
+
+		</div>
+		<h2>SETTINGS</h2>
+
+		
+		<div class="block">
+			<h3 class="gray">3D ANATHOMY VIEWER</h3>
+			 	<select>
+				  	<option value="female">Female</option>
+				  	<option value="male">Male</option>
+				</select> 
+		</div>
+
+		<div class="block">
+			<h3 class="gray">PERSONALIZATION</h3>
+			 	<div class="inputLabel">Name:</div><input type="text" id="nameInput"><br>
+			 	<div class="inputLabel">Clinic:</div><input type="text" id="clinicInput">
+		</div>
+
+		<div class="block">
+			<h3 class="gray">CLINIC SPECIALTY</h3>
+			 	<select>
+				  	<option value="pediatric">Pediatric</option>
+				  	<option value="pediatric">Pediatric</option>
+				</select> 
+		</div>
+
+		<div class="block">
+			<h3 class="gray">SCREEN SAVER ACTIVATION</h3>
+			 	<select id="loopTime">
+				  	<option value="30000">30 sec.</option>
+				  	<option value="60000">60 sec.</option>
+				  	<option value="120000">120 sec.</option>
+				</select> 
+		</div>
+
+		<button type="button" class="btn" onClick="saveSettings();" onLoad="populatePersonalizationInput();" >SAVE</button>
+
+
+	</div> <!-- container end -->
+
+</body>
+</html> 
+
+ <script src="js/app.js"></script> 

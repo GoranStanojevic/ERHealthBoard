@@ -1,0 +1,364 @@
+@font-face {
+    font-family: bold;
+    src: url(../fonts/ProximaNova-Bold.otf);
+}
+
+@font-face {
+    font-family: boldItalic;
+    src: url(../fonts/ProximaNova-BoldIt.otf);
+}
+
+@font-face {
+    font-family: light;
+    src: url(../fonts/ProximaNova-Light.otf);
+}
+
+@font-face {
+    font-family: lightItalic;
+    src: url(../fonts/ProximaNova-LightIt.otf);
+}
+
+
+
+
+html, body {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	/*font-family: Arial, Helvetica, sans-serif;*/
+	font-family: 'light';
+	font-size: 32px;
+}
+
+#container {
+ position: relative;
+ display: inline-block;
+ left: 0;
+ top: 0;
+ width: 100vw;
+ height: 99vh;
+ text-align: center;
+ overflow: hidden;
+ margin: 0;
+ padding: 0;
+
+}
+#container h2{
+	//display: inline;
+	//float: left;
+	width: 70%;
+	text-align: left;
+	margin: 2%;
+	color: #555;
+	font-family: bold;
+}
+
+#header {
+	/*font-style: italic;*/
+	margin: 2%;
+	text-align: left;
+
+}
+
+#headerCont {
+	position: absolute;
+	top:0;
+	left:0;
+	height: 10%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+
+}
+
+.logo {
+	width: 70%;
+	margin-bottom: 0.6em;
+}
+
+#mainTitle {
+	font-size: 2em;
+}
+
+#mainMenu img {
+	width: 260px;
+	height: 260px;
+}
+
+.heatherBox {
+	color: white;
+	font-style: none;
+	background: #d73e3d;
+	padding: 2%;
+}
+
+.titleRed {
+	color: #d73e3d;
+}
+
+.block {
+	margin: 0 2% 2% 2%;
+	text-align: left;
+	position: relative;
+	padding-top: 0;
+}
+
+.block h3{
+	color: #d73e3d;
+	font-family: bold;
+	font-size: 1.4em;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	padding-top: 0;
+	margin-top: 0;
+}
+.block h4{
+	font-style: italic;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	margin-top: 0;
+	padding-top: 0;
+	font-size: .8em;
+}
+.block p{
+	margin-top: 0;
+	padding-top: 0;
+}
+.block .date {
+	color: gray;
+}
+
+.block .gray {
+	color: #555;
+	font-size: 1.2em;
+	margin-bottom: 0.5em;
+	margin-top: 2em;
+}
+
+.inputLabel {
+	display: inline-block;
+	width: 4em;
+	margin-top: 1em;
+}
+
+.block input {
+	position: relative;
+	border: none;
+	border-bottom: 1px solid black;
+	width: 80%;
+	font-size: 1em;
+}
+
+select {
+	width: 80%;
+    padding: 0.5em;
+    display: inline-block;
+    border: 1px solid black;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.blockSearch {
+	margin: 2%;
+	text-align: left;
+	position: relative;
+}
+.blockSearch input {
+	width: 80%;
+    padding: 0.5em;
+    display: inline-block;
+    border: 1px solid #999;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.halfBlock {
+	width: 44%;
+	position: relative;
+	display: inline-block;
+	padding: 2%;
+	padding-right: 3%;
+}
+
+.btn {
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: .8em;
+  background: #d73e3d;
+  padding: 10px 50px 10px 50px;
+  text-decoration: none;
+  margin-left: auto;
+}
+
+.btn:hover {
+  background: #f20c0c;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#mainMenu h3 {
+	margin-top: 0;
+	font-size: 1em;
+	font-family: bold;
+	color: #444;
+}
+
+#mainMenu .halfBlock {
+	margin-top: 3em;
+}
+
+/*.checkmark {
+	width: 1.2em;
+	height: 1.2em;
+	vertical-align: bottom;
+}*/
+
+.searchOptions {
+	margin-top: 2em;
+	line-height: 2.5em;
+	margin-bottom: 10em;
+}
+
+/*
+CHECKBOX
+CHECKBOX
+CHECKBOX
+*/
+
+/* The container */
+.containerCb {
+    display: block;
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox 
+
+*/
+.containerCb input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1em;
+    width: 1em;
+    //background-color: #eee;
+    border: 1px solid red;
+}
+
+/* On mouse-over, add a grey background color */
+.containerCb:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.containerCb input:checked ~ .checkmark {
+    background-color: #d73e3d;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.containerCb input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.containerCb .checkmark:after {
+    left: 8px;
+    top: 0px;
+    /*width: 5px;
+    height: 10px;*/
+    height: 1em;
+    width: 0.5em;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/*
+CHECKBOX
+CHECKBOX END
+CHECKBOX
+*/
+
+
+.homeIcon {
+	float: right;
+	width: 64px;
+}
+.backIcon {
+	position: absolute;
+	right: 2%;
+	top: 10.2%;
+	float: right;
+	width: 64px;
+}
+
+#articleImage {
+	margin-top: 2em;
+	width: 100%;
+}
+
+.list {
+	font-size: 0.8em;
+}
+
+table {
+	width:96%; 
+	margin: 2%;
+}
+
+tr {vertical-align: top;}
+
+table img{ width: 256px; }
+
+.content {
+	margin: 0;
+	padding: 0;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	position: fixed;
+	top: 14%;
+	width: 100%;
+	height: 86%;
+	overflow-y: scroll;
+}
+
+.brochureImage {
+	margin-top: 10px;
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
